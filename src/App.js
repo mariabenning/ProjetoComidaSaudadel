@@ -1,6 +1,6 @@
-import React from 'react'
-import Router from "./Routes/Router"
-
+import React from 'react';
+import Router from "./Routes/Router";
+import  GlobalStyle from "./Pages/Home/styled";
 import styled from "styled-components"
 
 
@@ -8,11 +8,10 @@ import styled from "styled-components"
 const  App = ()  => {
   return (
     <div>
-   <Router/>
-
+      <GlobalStyle></GlobalStyle>
+      <Router/>
+   
    </div>
-
-    
   );
 }
 

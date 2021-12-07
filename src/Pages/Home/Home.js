@@ -1,25 +1,34 @@
 
 import React from 'react'
-import styled from "styled-components";
 import Illutration from '../../img/Illustration.svg';
- 
+import { Menu, Header, ContainerPrincipal } from './styled';
 
 
 
- const  Home = ()  => {
+const Home = () => {
 
 
 
 
-    
+
     return (
-        <div>
+        <ContainerPrincipal>
+            <Header>
+                <h1>HEALTHY FOOD</h1>
+            </Header>
+            <Menu>
+                <button>HEALTHY  RECIPES </button>
+                <button>BLOG</button>
+                <button>JOIN</button>
+                <button>REGISTER</button>
+            </Menu>
 
-            <h1>Healthy Food</h1>
             <h2>Ready for Trying a new recipe?</h2>
             <input placeholder="Search healthy recipes"></input>
-             <img src={Illutration} ></img> 
-        </div>
+
+            <img src={Illutration} ></img>
+
+        </ContainerPrincipal>
     );
 }
 
