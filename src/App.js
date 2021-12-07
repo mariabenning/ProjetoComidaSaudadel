@@ -1,5 +1,5 @@
 import React from 'react'
-import { Router } from 'react-router';
+import Router from "./Routes/Router"
 
 import styled from "styled-components"
 
@@ -8,11 +8,11 @@ import styled from "styled-components"
 const  App = ()  => {
   return (
     <div>
-    <Router/>
+   <Router/>
 
-      
+   </div>
 
-    </div>
+    
   );
 }
 

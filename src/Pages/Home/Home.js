@@ -25,4 +25,4 @@ import Illutration from '../../img/Illustration.svg';
 
 
 
-export default Home
+export default Home;
