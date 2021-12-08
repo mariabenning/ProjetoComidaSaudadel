@@ -1,8 +1,7 @@
 
 import styled, { createGlobalStyle } from 'styled-components';
-import Illutration from '../../img/Illustration.svg';
 
-
+import Illustration from "../../img/Illustration.svg";
 
 
  const GlobalStyle = createGlobalStyle`
@@ -30,7 +29,7 @@ import Illutration from '../../img/Illustration.svg';
     cursor: pointer;
   }
 
-  
+
 `;
 
 
@@ -47,10 +46,8 @@ align-items: center;
 padding: 20px;
 
 
-body {
-background-image: url("../../img/Illustration.svg");
-background-repeat: no-repeat;
-}
+
+
 
 
 `
@@ -69,9 +66,11 @@ padding: 10px;
 
 
 export const HomePage = styled.div `
- display: flex;
- align-items: center;
  
+ height: 800px;
+ width: 800px;
+ background-image: url(${Illustration});
+ background-repeat: no-repeat;
  
 `
 
@@ -82,14 +81,14 @@ margin-left: 30px;
 `
 
 export const InputHome = styled.input`
-display: flex;
+
 
 
 
 `
 
 export const ImgHome = styled.img`
-max-width: 100%;
+
 
 
 

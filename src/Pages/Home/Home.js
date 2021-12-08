@@ -13,6 +13,7 @@ const Home = () => {
 
     return (
         <div>
+             <HomePage>
             <Header>
                 <h1>HEALTHY FOOD</h1>
             
@@ -28,7 +29,7 @@ const Home = () => {
 
             </Header>
 
-             <HomePage>
+            
            
             <TextPage>Ready for Trying a new recipe?</TextPage>
             <InputHome type = "search" id = "search" placeholder ="Search healthy recipes"></InputHome>
