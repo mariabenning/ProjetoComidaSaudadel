@@ -1,97 +1,60 @@
 
 import styled, { createGlobalStyle } from 'styled-components';
-
 import Illustration from "../../img/Illustration.svg";
-
 
  const GlobalStyle = createGlobalStyle`
 *{  margin: 0;
     padding: 0;
     outline: 0;
+    margin-left:0;
+    margin-top:0;
     list-style: none;
     box-sizing: border-box;
-
-    
+  }
+input, button, li, ul, p {
+font: 16px "Poppins", sans-serif;
 }
 
-  body {
-    background: #F0F2F5 ;
-    -webkit-font-smoothing: antialiased;
-    
-  }
-
-  body, input, button, li, ul, p {
-  font: 16px "Poppins", sans-serif;
-  }
-
-
-  button {
+button {
     cursor: pointer;
   }
 
+a {
+  text-decoration: none;
+}`;
+export default GlobalStyle;
 
-`;
-
-
-
- export default GlobalStyle;
-
-
-
-export const Header = styled.div `
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
-align-items: center;
-padding: 20px;
-
-
-
-
-
+export const BackgroundHome = styled.div `
+ width: 50vw; 
+height: 100vh;
+background-image: url(${Illustration});
+background-size: cover;
+background-repeat: no-repeat;
+position: absolute; 
+float: left;
+left: 0px;
 
 `
 
 
-export const NavMenu = styled.li `
-display: flex;
-justify-content: space-around;
-padding: 10px;
-
-
-`
- 
 
 
 
 
-export const HomePage = styled.div `
- 
- height: 800px;
- width: 800px;
- background-image: url(${Illustration});
- background-repeat: no-repeat;
- 
-`
-
-export const TextPage = styled.h1`
-display: flex;
-margin-left: 30px;
-
-`
-
-export const InputHome = styled.input`
 
 
 
 
-`
-
-export const ImgHome = styled.img`
 
 
 
 
-`
+
+
+
+
+
+
+
 
 
