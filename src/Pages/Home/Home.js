@@ -1,7 +1,7 @@
 
 import React from 'react'
 import Illutration from '../../img/Illustration.svg';
-import { Menu, Header, ContainerPrincipal } from './styled';
+import { NavMenu, Header, HomePage, TextPage, InputHome, ImgHome } from './styled';
 
 
 
@@ -12,23 +12,31 @@ const Home = () => {
 
 
     return (
-        <ContainerPrincipal>
+        <div>
             <Header>
                 <h1>HEALTHY FOOD</h1>
+            
+            <nav>
+                <NavMenu>
+                <NavMenu>HEALTHY  RECIPES </NavMenu>
+                <NavMenu>BLOG</NavMenu>
+                <NavMenu>JOIN</NavMenu>
+                <NavMenu>REGISTER</NavMenu>
+                </NavMenu>
+               
+            </nav>
+
             </Header>
-            <Menu>
-                <button>HEALTHY  RECIPES </button>
-                <button>BLOG</button>
-                <button>JOIN</button>
-                <button>REGISTER</button>
-            </Menu>
 
-            <h2>Ready for Trying a new recipe?</h2>
-            <input placeholder="Search healthy recipes"></input>
+             <HomePage>
+           
+            <TextPage>Ready for Trying a new recipe?</TextPage>
+            <InputHome type = "search" id = "search" placeholder ="Search healthy recipes"></InputHome>
+            
 
-            <img src={Illutration} ></img>
-
-        </ContainerPrincipal>
+           
+            </HomePage>
+        </div>
     );
 }
 
