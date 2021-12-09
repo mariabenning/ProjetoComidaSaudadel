@@ -1,4 +1,4 @@
-import bloco_services from "../../img/bloco_services.svg";
+import { BackgroundServices, TextServices} from "./styled";
 
 
 
@@ -6,8 +6,14 @@ const Services = () => {
     return (
 
         <div>
-            <h1>The best services ready To serve you</h1>
-            <p> Far far away, behind the word mountains, far from
+            <BackgroundServices>
+            
+            </BackgroundServices>
+           <TextServices>
+             <h1>The best services ready To serve you</h1>
+
+             
+             <p> Far far away, behind the word mountains, far from
                 the countries Vokalia and Consonantia, there live the
                 blind texts.
                 Separated they live in Bookmarksgrove right at the
@@ -15,11 +21,7 @@ const Services = () => {
                 A small river named Duden flows by their place and
                 supplies it with the necessary regelialia.</p>
             <button>Know More</button>
-            <img src={bloco_services} ></img>
-
-
-
-
+            </TextServices>
         </div>
 
     );

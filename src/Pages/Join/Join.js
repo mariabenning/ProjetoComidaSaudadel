@@ -1,17 +1,18 @@
-import bloco_final_image from "../../img/bloco_final_image.svg"
+import { BackgroundJoin, TextJoin } from "./styled";
 
 const Join = () => {
-    return (
-      <div>
-        
-    <h1>Join our membership to get special offer</h1>
+  return (
+    <div>
+      <BackgroundJoin></BackgroundJoin>
+      <TextJoin>
+        <h1>Join our membership to get special offer</h1>
 
-<input placeholder ="Enter your email address"></input>
-<button>Join</button>
-<img src={bloco_final_image} ></img> 
+        <input placeholder="Enter your email address"></input>
+        <button>Join</button>
+      </TextJoin>
 
-      </div>
-    );
-  }
+    </div>
+  );
+}
 
-  export default Join;
+export default Join;

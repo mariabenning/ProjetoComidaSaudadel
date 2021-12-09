@@ -25,7 +25,7 @@ a {
 export default GlobalStyle;
 
 export const BackgroundHome = styled.div `
- width: 55vw; 
+width: 55vw; 
 height: 100vh;
 background-image: url(${Illustration});
 background-size: cover;
