@@ -1,17 +1,30 @@
 import React from "react";
+import { BackgroundRegister } from "./styled";
 
 
+const Register = () => {
+  return (
+    <div>
+      <BackgroundRegister/>
+      <h1>Register</h1>
 
-const  Register = ()  => {
-    return (
-      <div>
-     Register
-  
-     </div>
-  
+        <input type = "nome" placeholder = "digite seu nome"></input>
+        <input type = "date" placeholder = "data de nascimento"></input>
+        <input type = "text" placeholder = "cpf"></input>
+        <input type = "text" placeholder = "cep"></input>
       
-    );
-  }
-  
-  export default Register;
-  
+        <button>Registrar</button>
+      
+
+    </div>
+
+
+  );
+}
+
+export default Register;
+
+
+
+
+

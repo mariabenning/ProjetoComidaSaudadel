@@ -1,4 +1,4 @@
-import { BackgroundJoin, TextJoin } from "./styled";
+import { BackgroundJoin, TextJoin, FooterJoin } from "./styled";
 
 const Join = () => {
   return (
@@ -11,6 +11,11 @@ const Join = () => {
         <button>Join</button>
       </TextJoin>
 
+    <footer>
+    <p>© Copyrights 2019 Stack. All Rights Reserved.</p>
+    <p>Privacy Policy</p> 
+    <p>Terms and Conditions</p>
+    </footer>
     </div>
   );
 }

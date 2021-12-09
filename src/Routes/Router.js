@@ -10,45 +10,46 @@ import Services from "../Pages/services/Services";
 
 
 
- const Router = () => {
+const Router = () => {
 
     return (
-    <BrowserRouter>
-        <Switch>
+        <BrowserRouter>
 
-            <Route exact path="/">
-            <Home/>
-            </Route>
+            <Switch>
 
-            <Route exact path="/healthyrecipes">
-            <HealthyRecipes/>
-            </Route>
+                <Route exact path="/">
+                    <Home />
+                </Route>
 
-            <Route exact path="/blog">
-                <Blog />
-            </Route>
+                <Route exact path="/healthyrecipes">
+                    <HealthyRecipes />
+                </Route>
 
-
-            <Route exact path="/join">
-                <Join />
-            </Route>
-
-            <Route exact path="/register">
-                <Register/>
-            </Route>
+                <Route exact path="/blog">
+                    <Blog />
+                </Route>
 
 
-            <Route exact path="/services">
-                <Services/>
-            </Route>
+                <Route exact path="/join">
+                    <Join />
+                </Route>
 
-            <Route>
-                <ErrorPage/>
-            </Route>
+                <Route exact path="/register">
+                    <Register />
+                </Route>
 
 
-        </Switch>
-    </BrowserRouter>
+                <Route exact path="/services">
+                    <Services />
+                </Route>
+
+                <Route>
+                    <ErrorPage />
+                </Route>
+
+
+            </Switch>
+        </BrowserRouter>
     )
 }
 

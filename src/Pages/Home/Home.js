@@ -1,14 +1,15 @@
 
-import React from 'react'
-
+import React from 'react';
+import { goToBlog, goToHealthyRecipes, goToJoin, goToRegister } from '../../Routes/coordinator';
 import { BackgroundHome, Header, NavMenu , TextHome } from './styled';
+import {useHistory } from 'react-router-dom';
 
 
 
 const Home = () => {
 
 
-
+    const history = useHistory()
 
 
     return (
@@ -17,10 +18,10 @@ const Home = () => {
 
             <BackgroundHome>
                 <NavMenu>
-                    <NavMenu>HEALTHY  RECIPES</NavMenu>
-                    <NavMenu>BLOG</NavMenu>
-                    <NavMenu>JOIN</NavMenu>
-                    <NavMenu>REGISTER</NavMenu>
+                    <button onClick={()=> goToHealthyRecipes(history)}>HEALTHY  RECIPES</button>
+                    <button onClick={()=> goToBlog(history)}>BLOG</button>
+                    <button onClick={()=> goToJoin(history)}>JOIN</button>
+                    <button onClick={()=> goToRegister(history)}>REGISTER</button>
 
                 </NavMenu>
             </BackgroundHome>
