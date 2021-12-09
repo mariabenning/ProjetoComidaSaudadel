@@ -3,57 +3,62 @@ import comida_1 from '../../img/comida_1.svg'
 import comida_2 from '../../img/comida_2.svg'
 import comida_3 from '../../img/comida_3.svg'
 import comida_4 from '../../img/comida_4.svg'
+import { CardComida, TextCard, TextPrincipal, backgroundCard } from './styled';
 
 
 
+const HealthyRecipes = () => {
+  return (
+    <div>
+      <TextPrincipal>
+        <h1>Our Best Recipes</h1>
+        <h2>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+          Vokalia and Consonantia, there live the blind texts. </h2>
+      
 
-
- const HealthyRecipes = () => {
-    return (
-      <div>
+      <CardComida>
+        <img src={comida_1} ></img>
         
-    <h1>Our Best Recipes</h1>
-    <h2>Far far away, behind the word mountains, far from the countries
-      Vokalia and Consonantia, there live the blind texts.</h2>
-     <h2>Vokalia and Consonantia, there live the blind texts.</h2>
-
-     <card>
-     <img src={comida_1} ></img> 
-     <p>Broccoli Salad with Bacon</p>
-     <button>See Recipe</button>
-     </card>
+        <TextCard word-break >Broccoli Salad with Bacon
+          <button>See Recipe</button>
+          </TextCard>
+      </CardComida>
 
 
-     <card>
-     <img src={comida_2} ></img> 
-     <p>Classic Beef Burgers</p>
-     <button>See Recipe</button>
-     </card>
+
+      <CardComida>
+        <img src={comida_2} ></img>
+        <TextCard>Classic Beef Burgers
+          <button>See Recipe</button>
+          </TextCard>
+      </CardComida>
 
 
-     <card>
-     <img src={comida_3} ></img> 
-     <p>Classic Potato Salad</p>
-     <button>See Recipe</button>
-     </card>
+      <CardComida>
+        <img src={comida_3} ></img>
+        <TextCard>Classic Potato Salad
+          <button>See Recipe</button>
+          </TextCard>
+      </CardComida>
 
 
-     <card>
-     <img src={comida_4}></img> 
-     <p>Cherry Cobbler on the Grill</p>
-     <button>See Recipe</button>
-     </card>
+      <CardComida>
+        <img src={comida_4}></img>
+        <TextCard>Cherry Cobbler on the Grill
+          <button>See Recipe</button>
+          </TextCard>
+      </CardComida>
 
 
 
 
+      </TextPrincipal>
 
 
 
+    </div>
+  );
+}
 
-      </div>
-    );
-  }
 
-
-  export default HealthyRecipes;
+export default HealthyRecipes;
