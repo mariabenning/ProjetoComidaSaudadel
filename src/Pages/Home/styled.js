@@ -25,25 +25,38 @@ a {
 export default GlobalStyle;
 
 export const BackgroundHome = styled.div `
- width: 50vw; 
+ width: 55vw; 
 height: 100vh;
 background-image: url(${Illustration});
 background-size: cover;
 background-repeat: no-repeat;
 position: absolute; 
-float: left;
-left: 0px;
-
+right: 0px;
 `
 
 
 
+export const Header = styled.div `
+display: flex;
+margin: 2px;
+padding: 20px;
+padding-left: 40px;
+
+`
+
+export const NavMenu = styled.li `
+display: flex;
+flex-wrap: wrap;
+padding: 20px;
+justify-content: space-around;
+
+`
 
 
-
-
-
-
+export const TextHome = styled.div `
+padding: 45px;
+padding-top: 50vh;
+`
 
 
 
