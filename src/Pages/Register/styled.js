@@ -15,3 +15,13 @@ right: 0px;
 
 
 `
+
+export const PageRegister = styled.div `
+
+display: flex;
+flex-direction: column;
+position: relative;
+align-items: start;
+padding: 100px;
+
+`

@@ -3,8 +3,10 @@ import React from 'react';
 import { goToBlog, goToHealthyRecipes, goToJoin, goToRegister } from '../../Routes/coordinator';
 import { BackgroundHome, Header, NavMenu , TextHome } from './styled';
 import {useHistory } from 'react-router-dom';
-
-
+import HealthyRecipes from '../HealthyRecipes/HealthyRecipes';
+import Join from '../Join/Join';
+import Blog from '../Blog/Blog';
+import Services from '../services/Services';
 
 const Home = () => {
 
@@ -36,6 +38,7 @@ const Home = () => {
             <input type="search" id="search" placeholder="Search healthy recipes"></input>
             <img src="https://cdn-icons-png.flaticon.com/512/2089/2089732.png" alt="pesquisar" height="16px" width="16px"></img>
             </TextHome>
+            
         </div>
 
     );
