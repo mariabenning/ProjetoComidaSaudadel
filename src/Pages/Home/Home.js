@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { goToBlog, goToHealthyRecipes, goToJoin, goToRegister } from '../../Routes/coordinator';
-import { BackgroundHome, Header, NavMenu , TextHome } from './styled';
+import { BackgroundHome, Header, NavMenu , TextHome, InputHome, ImgLupa } from './styled';
 import {useHistory } from 'react-router-dom';
 import HealthyRecipes from '../HealthyRecipes/HealthyRecipes';
 import Join from '../Join/Join';
@@ -20,11 +20,12 @@ const Home = () => {
 
             <BackgroundHome>
                 <NavMenu>
-                    <button onClick={()=> goToHealthyRecipes(history)}>HEALTHY  RECIPES</button>
-                    <button onClick={()=> goToBlog(history)}>BLOG</button>
-                    <button onClick={()=> goToJoin(history)}>JOIN</button>
-                    <button onClick={()=> goToRegister(history)}>REGISTER</button>
-
+                
+                    <NavMenu onClick={()=> goToHealthyRecipes(history)}>HEALTHY  RECIPES</NavMenu>
+                    <NavMenu onClick={()=> goToBlog(history)}>BLOG</NavMenu>
+                    <NavMenu onClick={()=> goToJoin(history)}>JOIN</NavMenu>
+                    <NavMenu onClick={()=> goToRegister(history)}>REGISTER</NavMenu>
+                    
                 </NavMenu>
             </BackgroundHome>
             <Header>
@@ -35,10 +36,12 @@ const Home = () => {
             </Header>
             <TextHome >
             <h2>Ready for Trying a new recipe?</h2>
-            <input type="search" id="search" placeholder="Search healthy recipes"></input>
-            <img src="https://cdn-icons-png.flaticon.com/512/2089/2089732.png" alt="pesquisar" height="16px" width="16px"></img>
-            </TextHome>
             
+            
+            <InputHome type="search" id="search" placeholder="Search healthy recipes"></InputHome>
+            <ImgLupa src="https://cdn-icons-png.flaticon.com/512/2089/2089732.png" alt="pesquisar" height="16px" width="16px"></ImgLupa>
+            
+            </TextHome>
         </div>
 
     );

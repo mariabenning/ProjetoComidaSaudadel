@@ -24,13 +24,22 @@ button {
     cursor: pointer;
   }
 
+ 
 
+  
 
-
+  
 a {
   text-decoration: none;
 }`;
 export default GlobalStyle;
+
+
+
+
+
+
+
 
 export const BackgroundHome = styled.div`
 width: 55vw; 
@@ -50,31 +59,55 @@ right: 0px;
 
 export const Header = styled.div`
 display: flex;
+flex-wrap: wrap;
 margin: 2px;
-padding: 20px;
-padding-left: 40px;
 
+padding: 20px;
+padding-left: 10%;
+font-size: 1vw;
+color:LimeGreen;
+position: absolute; 
 `
 
 export const NavMenu = styled.li`
 display: flex;
 flex-wrap: wrap;
 padding: 20px;
-justify-content: space-around;
+padding-left: 50px;
+justify-content: normal;
+border: none;
+cursor:pointer;
+font-size: 1vw;
+color: white;
+hover: color: black;
 
 `
 
 
-export const TextHome = styled.div`
-padding: 45px;
-padding-top: 50vh;
+export const TextHome = styled.h2`
+width:30%;
+font-size: 2vw;
+padding-left: 10%;
+padding-top: 20%;
+`
+
+export const ImgLupa = styled.img `
+
+
+width: 30px;
+height: 28px;
+align-items: center;
+
 `
 
 
 
-
-
-
+export const InputHome= styled.input `
+width:230px;
+height: 40px;
+margin-top: 20px;
+align-items: center;
+`
 
 
 

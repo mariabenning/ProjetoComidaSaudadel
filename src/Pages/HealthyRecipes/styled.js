@@ -38,3 +38,7 @@ justify-content: center;
 `
 
 
+export const TextHecipes= styled.h2`
+
+
+`
