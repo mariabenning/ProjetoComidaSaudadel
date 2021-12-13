@@ -1,17 +1,12 @@
 
 import React from 'react';
 import { goToBlog, goToHealthyRecipes, goToJoin, goToRegister } from '../../Routes/coordinator';
-import { BackgroundHome, Header, NavMenu , TextHome, InputHome, ImgLupa } from './styled';
+import { BackgroundHome, Header, NavMenu , TextHome, InputHome, ImgLupa} from './styled';
+import MenuMobile from '../MenuMobile/MenuMobile';
 import {useHistory } from 'react-router-dom';
-import HealthyRecipes from '../HealthyRecipes/HealthyRecipes';
-import Join from '../Join/Join';
-import Blog from '../Blog/Blog';
-import Services from '../services/Services';
 
 const Home = () => {
-
-
-    const history = useHistory()
+const history = useHistory()
 
 
     return (
@@ -19,7 +14,8 @@ const Home = () => {
         <div>
 
             <BackgroundHome>
-                <NavMenu>
+                
+                    <NavMenu>
                 
                     <NavMenu onClick={()=> goToHealthyRecipes(history)}>HEALTHY  RECIPES</NavMenu>
                     <NavMenu onClick={()=> goToBlog(history)}>BLOG</NavMenu>
@@ -34,6 +30,7 @@ const Home = () => {
                 <h1>HEALTHY FOOD</h1>
 
             </Header>
+            <MenuMobile></MenuMobile>
             <TextHome >
             <h2>Ready for Trying a new recipe?</h2>
             

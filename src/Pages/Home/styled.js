@@ -24,14 +24,10 @@ button {
     cursor: pointer;
   }
 
- 
-
-  
-
-  
 a {
   text-decoration: none;
 }`;
+
 export default GlobalStyle;
 
 
@@ -49,14 +45,18 @@ background-size: cover;
 background-repeat: no-repeat;
 position: absolute; 
 right: 0px;
+@media (min-device-width: 320px) and (max-device-width: 480px) {
+  display: none;
+  
+  };
+
+@media (min-device-width: 481px) and (max-device-width: 800px) {
+display: none;
 
 }
 `
 
-// @media(min-width:320px) {
-//   display: none;
-  
-// }
+
 
 
 
@@ -65,16 +65,20 @@ export const Header = styled.div`
 display: flex;
 flex-wrap: wrap;
 margin: 2px;
-
 padding: 20px;
 padding-left: 10%;
 font-size: 1vw;
 color:LimeGreen;
 position: absolute; 
-/* :hover {
-      background: #795a8b;
-       */
-`
+@media (min-device-width: 320px) and (max-device-width: 480px) {
+  font-size: 3vw;
+
+};
+
+@media (min-device-width: 481px) and (max-device-width: 800px) {
+
+font-size: 3vw;
+}`
 
 export const NavMenu = styled.li`
 display: flex;
@@ -86,6 +90,15 @@ border: none;
 cursor:pointer;
 font-size: 1vw;
 color: white;
+@media (min-device-width: 320px) and (max-device-width: 480px) {
+  display: none;
+  };
+
+  @media (min-device-width: 481px) and (max-device-width: 800px) {
+  display: none;
+  };
+}
+
 
 `
 
@@ -95,25 +108,61 @@ width:30%;
 font-size: 2vw;
 padding-left: 10%;
 padding-top: 20%;
+@media (min-device-width: 320px) and (max-device-width: 480px) {
+  
+  font-size: 8vw;
+  padding-top: 15vh;
+
+  };
+
+
+  @media (min-device-width: 481px) and (max-device-width: 800px) {
+    font-size: 5vw;
+    padding-top: 15vh;
+  };
 `
 
-export const ImgLupa = styled.img `
+export const ImgLupa = styled.img`
 
 
 width: 30px;
 height: 28px;
 align-items: center;
+@media (min-device-width: 320px) and (max-device-width: 480px) {
+  display: none;
+  }
 
+  @media (min-device-width: 481px) and (max-device-width: 800px) {
+  display: none;
+  }
 `
 
 
 
-export const InputHome= styled.input `
+export const InputHome = styled.input`
 width:230px;
 height: 40px;
 margin-top: 20px;
 align-items: center;
+@media (min-device-width: 320px) and (max-device-width: 480px) {
+  
+width: 80vw;
+height: 5vh;
+margin: 50% auto;
+};
+
+  @media(min-device-width: 481px) and (max-device-width: 800px) {
+    width: 80vw;
+    height: 5vh;
+    margin: 50% auto;
+}
 `
+
+
+
+  
+
+
 
 
 
