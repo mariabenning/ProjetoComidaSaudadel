@@ -49,10 +49,14 @@ background-size: cover;
 background-repeat: no-repeat;
 position: absolute; 
 right: 0px;
+
+}
 `
 
-
-
+// @media(min-width:320px) {
+//   display: none;
+  
+// }
 
 
 
@@ -67,6 +71,9 @@ padding-left: 10%;
 font-size: 1vw;
 color:LimeGreen;
 position: absolute; 
+/* :hover {
+      background: #795a8b;
+       */
 `
 
 export const NavMenu = styled.li`
@@ -79,7 +86,6 @@ border: none;
 cursor:pointer;
 font-size: 1vw;
 color: white;
-hover: color: black;
 
 `
 
