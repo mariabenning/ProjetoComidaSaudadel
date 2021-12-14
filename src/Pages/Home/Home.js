@@ -4,6 +4,11 @@ import { goToBlog, goToHealthyRecipes, goToJoin, goToRegister } from '../../Rout
 import { BackgroundHome, Header, NavMenu , TextHome, InputHome, ImgLupa} from './styled';
 import MenuMobile from '../MenuMobile/MenuMobile';
 import {useHistory } from 'react-router-dom';
+import HealhyRecipe from "../../Pages/HealthyRecipes/HealthyRecipes";
+
+import Services from "../../Pages/services/Services";
+import Blog from "../../Pages/Blog/Blog";
+import Join from "../../Pages/Join/Join"
 
 const Home = () => {
 const history = useHistory()
@@ -24,6 +29,7 @@ const history = useHistory()
                     
                 </NavMenu>
             </BackgroundHome>
+            
             <Header>
 
 
@@ -39,6 +45,13 @@ const history = useHistory()
             <ImgLupa src="https://cdn-icons-png.flaticon.com/512/2089/2089732.png" alt="pesquisar" height="16px" width="16px"></ImgLupa>
             
             </TextHome>
+             <HealhyRecipe></HealhyRecipe>
+             
+             <Services></Services>
+             
+             <Blog></Blog>
+
+            <Join></Join>
         </div>
 
     );

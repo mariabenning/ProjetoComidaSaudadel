@@ -16,10 +16,14 @@ font: 16px "Poppins", sans-serif;
 }
  img {
 max-width: 100%;
-
-
-
 }
+
+
+body {
+  background-color: Gainsboro;
+}
+
+
 button {
     cursor: pointer;
   }

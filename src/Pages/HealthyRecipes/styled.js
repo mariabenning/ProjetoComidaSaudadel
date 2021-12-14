@@ -32,7 +32,7 @@ export const TextPrincipal = styled.div `
 margin: 80px;
 display: flex;
 flex-wrap: wrap;
-justify-content: center;
+
 
 
 `
