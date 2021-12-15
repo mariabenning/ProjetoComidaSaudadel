@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 
 export const TitleRecipes= styled.h1`
-margin: 80px;
+margin: 50px;
 justify-content: center;
 display:flex;
 flex-wrap: wrap;

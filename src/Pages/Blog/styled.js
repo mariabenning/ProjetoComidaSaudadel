@@ -6,6 +6,7 @@ justify-content: center;
 display:flex;
 flex-wrap: wrap;
 font-size: 1vw;
+
 @media (min-device-width: 320px) and (max-device-width: 480px) {
 font-size: 3vw;
   

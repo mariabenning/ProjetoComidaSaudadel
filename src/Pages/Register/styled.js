@@ -29,6 +29,23 @@ display: flex;
 font-size: 20px;
 padding-top: 100px;
 padding-left: 15%;
+@media (min-device-width: 320px) and (max-device-width: 480px) {
+
+padding-left: 40%;
+font-size: 2vh;
+  
+};
+
+@media (min-device-width: 481px) and (max-device-width: 800px) {
+    padding-left: 40%;
+    ont-size: 2vh;
+  
+
+    
+}
+
+
+
 `
 
 
@@ -39,6 +56,20 @@ display: flex;
 Flex-direction: column;
 width: 50%;
 align-items: center;
+
+@media (min-device-width: 320px) and (max-device-width: 480px) {
+
+padding-left: 50%;
+
+  
+};
+
+@media (min-device-width: 481px) and (max-device-width: 800px) {
+    padding-left: 50%;
+
+    
+}
+
 
 `
 
@@ -52,6 +83,20 @@ padding: 5px;
 margin: 5px;
 color: white;
 
+
+@media (min-device-width: 320px) and (max-device-width: 480px) {
+
+
+    
+
+};
+
+@media (min-device-width: 481px) and (max-device-width: 800px) {
+   
+   
+
+}
+
 `
 
 
@@ -62,6 +107,18 @@ background: white;
 padding: 5px;
 margin: 5px
 color: greem;
+
+
+@media (min-device-width: 320px) and (max-device-width: 480px) {
+    
+
+  
+};
+
+@media (min-device-width: 481px) and (max-device-width: 800px) {
+    
+
+}
 
 
 `

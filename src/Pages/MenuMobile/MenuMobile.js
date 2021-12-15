@@ -1,57 +1,25 @@
 
-import { NavMobile, NavMenu } from "./styled";
-import { useState} from "react"
-import { FiMenu } from "react-icons/fi";
-import { FiX  } from "react-icons/fi";
+import {  RegisterMobile, ButtonRegister } from "./styled";
+
 
 
 
 const MenuMobile = () => {
 
-const [openMenu, setOpenMenu] = useState(false);
+   return (
 
-const handleOpen = () => {
-setOpenMenu(!openMenu)
-console.log("voce clicou");
-}
-
-    return (
-
-                <>
+            <RegisterMobile>
             
-                 <button onClick={handleOpen}>
-                      <FiMenu size="30" color = "red"></FiMenu> 
-                    {/* <FiX size="30" color = "red"></FiX> */}
-                  
-                     
-                </button>
-
-          <NavMobile>
-
-        
-            <NavMenu>
-            <ul>
-
-                <li>
-                    <a href="/healthyrecipes">HEALTHY RECIPES </a>
-                </li>
-                <li>
-                    <a href="/blog">BLOG </a>
-                </li>
-                <li>
-                    <a href="/join">JOIN </a>
-                </li>
-                <li>
-                    <a href="/register">REGISTER </a>
-                </li>
-
+                   <ButtonRegister >
+                      <a href="/register">REGISTER </a>
+                   </ButtonRegister>
 
                
-            </ul>
-            </NavMenu>
-            </NavMobile>
             
-        </>
+            </RegisterMobile>
+            
+            
+        
     )
 
 

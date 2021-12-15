@@ -4,34 +4,30 @@ import styled from "styled-components";
 
 
 
-export const NavMobile = styled.div`
+export const RegisterMobile = styled.div`
+
 display: none;
-transform : translate(-250px);
+
   @media (min-device-width: 320px) and (max-device-width: 480px) {
-  display: block;
-  color:LimeGreen;
-  height: 100vh;
-  width: 250px;
-  padding: 10px;
-  background: white;
-  position: fixed;
-  
+    display: block;
+    padding: 25px;
+    padding-left: 70%;
+    
+    
+
   };
   @media (min-device-width:481px) and (max-device-width: 800px) {
-  display: block;
-  color:LimeGreen;
+    display: block;
+    padding: 25px;
+    padding-left: 70%;
+    
 `
 
-
-export const NavMenu = styled.div`
-
-ul {
-
-  li{
-padding: 10px 0;
-width: 100%;
-display: block;
-
-  }
-}
+export const ButtonRegister =  styled.div `
+border: none;
+background: LimeGreen;
+padding: 4px;
+color: white;
+text-decoration: none;
 `
+

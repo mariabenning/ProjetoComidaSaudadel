@@ -30,6 +30,7 @@ button {
 
 a {
   text-decoration: none;
+
 }`;
 
 export default GlobalStyle;
@@ -126,20 +127,8 @@ padding-top: 20%;
   };
 `
 
-export const ImgLupa = styled.img`
 
 
-width: 30px;
-height: 28px;
-align-items: center;
-@media (min-device-width: 320px) and (max-device-width: 480px) {
-  display: none;
-  }
-
-  @media (min-device-width: 481px) and (max-device-width: 800px) {
-  display: none;
-  }
-`
 
 
 
@@ -149,8 +138,8 @@ height: 40px;
 margin-top: 20px;
 align-items: center;
 @media (min-device-width: 320px) and (max-device-width: 480px) {
-  
-width: 80vw;
+
+width: 70vw;
 height: 5vh;
 margin: 50% auto;
 };
@@ -171,6 +160,18 @@ margin: 50% auto;
  width:30px;
  Background: green;
  margin: 1px;
+
+
+ @media (min-device-width: 320px) and (max-device-width: 480px) {
+ display: none;
+  };
+
+  @media(min-device-width: 481px) and (max-device-width: 800px) {
+    display: none;
+}
+
+
+
  `
 
 
