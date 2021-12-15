@@ -1,7 +1,8 @@
 import styled from "styled-components"
 
 export const  TitleBlog = styled.h1`
-margin: 40px;
+margin: 10%;
+margin-top: 20%;
 justify-content: center;
 display:flex;
 flex-wrap: wrap;

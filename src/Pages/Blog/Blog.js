@@ -19,7 +19,7 @@ export default function Blog() {
         <h2>Far far away, behind the word mountains, far from the countries
           Vokalia and Consonantia, there live the blind texts.</h2>
       </TextBlog>
-<CardContainer>
+      <CardContainer>
       <CardBLog>
         <CardImg src={bloco_image_1} ></CardImg>
         <h2>Quick-start guideto nuts and seeds</h2>
