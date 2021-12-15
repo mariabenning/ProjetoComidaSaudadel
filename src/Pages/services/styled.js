@@ -15,13 +15,12 @@ left: 0px;
 `
 
 
-export const TextServices = styled.div `
-display: flex;
-width: 50vw; 
-height: 50vh;
-flex-wrap: wrap;
-position: absolute;
-right: 0px;
-padding-top: 100px;
-padding-right: 10vw;
+
+
+export const TitleKnowMore= styled.h1 `
+
+`
+
+export const TextServices = styled.p `
+
 `

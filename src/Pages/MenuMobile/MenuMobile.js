@@ -1,19 +1,35 @@
 
-import { NavMobile } from "./styled";
+import { NavMobile, NavMenu } from "./styled";
 import { useState} from "react"
+import { FiMenu } from "react-icons/fi";
+import { FiX  } from "react-icons/fi";
+
+
 
 const MenuMobile = () => {
-const [ active, setMode] = useState(false);
-const ToggleMode = () => {
-setMode(!active)
 
+const [openMenu, setOpenMenu] = useState(false);
+
+const handleOpen = () => {
+setOpenMenu(!openMenu)
+console.log("voce clicou");
 }
 
     return (
 
-        <div>
+                <>
+            
+                 <button onClick={handleOpen}>
+                      <FiMenu size="30" color = "red"></FiMenu> 
+                    {/* <FiX size="30" color = "red"></FiX> */}
+                  
+                     
+                </button>
 
-            <NavMobile >Menu</NavMobile>
+          <NavMobile>
+
+        
+            <NavMenu>
             <ul>
 
                 <li>
@@ -30,11 +46,12 @@ setMode(!active)
                 </li>
 
 
-
+               
             </ul>
-
-
-        </div>
+            </NavMenu>
+            </NavMobile>
+            
+        </>
     )
 
 

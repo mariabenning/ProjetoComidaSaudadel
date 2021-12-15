@@ -10,7 +10,8 @@ const  App = ()  => {
     <div>
       <GlobalStyle></GlobalStyle>
       <Router/>
-   
+      
+                
    </div>
   );
 }

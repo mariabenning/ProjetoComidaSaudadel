@@ -1,4 +1,4 @@
-import { BackgroundServices, TextServices} from "./styled";
+import { BackgroundServices, TextServices, TitleKnowMore} from "./styled";
 
 
 
@@ -6,13 +6,11 @@ const Services = () => {
     return (
 
         <div>
-            <BackgroundServices>
-            
-            </BackgroundServices>
-           <TextServices>
-             <h1>The best services ready To serve you</h1>
+            <BackgroundServices/>
+           
+           <TitleKnowMore><h1>The best services ready To serve you</h1></TitleKnowMore>
 
-             
+             <TextServices>
              <p> Far far away, behind the word mountains, far from
                 the countries Vokalia and Consonantia, there live the
                 blind texts.

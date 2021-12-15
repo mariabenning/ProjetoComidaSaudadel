@@ -164,7 +164,17 @@ margin: 50% auto;
 
 
 
-  
+ export const  SeachButton = styled.button `
+ border: none;
+ color: white;
+ height: 40px;
+ width:30px;
+ Background: green;
+ margin: 1px;
+ `
+
+
+
 
 
 
